@@ -1,0 +1,354 @@
+/*=========================================
+ MAGISTERIO PRO
+ Lic. Carlos Eduardo Sepúlveda Toro
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f4f4f4;
+
+    color:#333;
+
+    font-family:Segoe UI,Arial,sans-serif;
+
+}
+
+/*=========================================
+CABECERA
+=========================================*/
+
+header{
+
+    background:#1f2937;
+
+    color:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-bottom:4px solid #0f172a;
+
+}
+
+header h1{
+
+    font-size:2rem;
+
+    letter-spacing:3px;
+
+    font-weight:300;
+
+}
+
+header p{
+
+    margin-top:10px;
+
+    color:#cbd5e1;
+
+}
+
+/*=========================================
+CONTENEDOR
+=========================================*/
+
+.contenedor{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    height:calc(100vh - 120px);
+
+}
+
+/*=========================================
+MENU
+=========================================*/
+
+aside{
+
+    overflow:auto;
+
+    background:white;
+
+    border-right:1px solid #dddddd;
+
+    padding:20px;
+
+}
+
+aside h2{
+
+    margin-bottom:20px;
+
+    font-size:1.1rem;
+
+    color:#111827;
+
+}
+
+/*=========================================
+DETAILS
+=========================================*/
+
+details{
+
+    margin-bottom:8px;
+
+}
+
+summary{
+
+    cursor:pointer;
+
+    list-style:none;
+
+    padding:10px;
+
+    border-radius:5px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+summary:hover{
+
+    background:#f1f5f9;
+
+}
+
+/* elimina la flecha del navegador */
+
+summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+/* flechas personalizadas */
+
+summary::before{
+
+    content:"▶";
+
+    margin-right:8px;
+
+    color:#64748b;
+
+    font-size:.7rem;
+
+}
+
+details[open]>summary::before{
+
+    content:"▼";
+
+}
+
+/*=========================================
+LISTAS
+=========================================*/
+
+aside ul{
+
+    list-style:none;
+
+    margin-left:18px;
+
+}
+
+aside li{
+
+    margin:3px 0;
+
+}
+
+aside a{
+
+    display:block;
+
+    padding:8px;
+
+    text-decoration:none;
+
+    color:#374151;
+
+    border-radius:4px;
+
+    transition:.20s;
+
+    font-size:.95rem;
+
+}
+
+aside a:hover{
+
+    background:#e0f2fe;
+
+    color:#0369a1;
+
+}
+
+/*=========================================
+DOCUMENTO
+=========================================*/
+
+main{
+
+    overflow:auto;
+
+    padding:50px;
+
+}
+
+article{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+article h2{
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+    border-bottom:1px solid #d1d5db;
+
+    padding-bottom:10px;
+
+}
+
+article h3{
+
+    margin-top:35px;
+
+    margin-bottom:15px;
+
+    color:#374151;
+
+}
+
+article h4{
+
+    margin-top:30px;
+
+    margin-bottom:10px;
+
+}
+
+article h5{
+
+    margin-top:25px;
+
+    color:#0f172a;
+
+}
+
+article p{
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+SEPARADORES
+=========================================*/
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #dddddd;
+
+    margin:30px 0;
+
+}
+
+/*=========================================
+PIE
+=========================================*/
+
+footer{
+
+    background:#1f2937;
+
+    color:#cbd5e1;
+
+    text-align:center;
+
+    padding:15px;
+
+}
+
+/*=========================================
+SCROLL
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#94a3b8;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+/*=========================================
+RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+.contenedor{
+
+grid-template-columns:1fr;
+
+}
+
+aside{
+
+height:300px;
+
+border-right:none;
+
+border-bottom:1px solid #ddd;
+
+}
+
+main{
+
+padding:25px;
+
+}
+
+}
